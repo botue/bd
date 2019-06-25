@@ -145,8 +145,7 @@
     .panel {
       height: 13.5rem;
       background-image: url(./assets/images/border-1.png);
-      background-size: contain;
-      background-repeat: no-repeat;
+      background-size: 100% 100%;
       margin-bottom: 1rem;
 
       h3 {
@@ -176,16 +175,14 @@
     .order {
       height: 20rem;
       background-image: url(./assets/images/border-2.png);
-      background-size: contain;
-      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
 
     // 销量统计
     .sales {
       height: 18.5rem;
       background-image: url(./assets/images/border-3.png);
-      background-size: contain;
-      background-repeat: no-repeat;
+      background-size: 100% 100%;
       margin-top: 4rem;
     }
 
