@@ -118,7 +118,6 @@
         let doc = document.documentElement
         let docWidth = doc.clientWidth
         // 限制边界
-        if(docWidth < 1024) docWidth = 1024
         if(docWidth > 1920) docWidth = 1920
         // 设置 html 字号大小cons
         doc.style.fontSize = docWidth / 80 + 'px'
@@ -972,7 +971,6 @@
 
 <style lang="less">
   .viewport {
-    min-width: 1024px;
     max-width: 1920px;
     margin: 0 auto;
   }
@@ -1188,6 +1186,7 @@
         width: 100%;
         height: 6rem;
         position: absolute;
+        left: 0;
         top: -2.75rem;
         display: flex;
         flex-direction: column;
@@ -1196,15 +1195,16 @@
 
       .item {
         display: flex;
+        justify-content: center;
         height: 2rem;
         text-align: center;
         line-height: 2rem;
-        margin-left: 4.5rem;
         color: #00e4ff;
 
         h5 {
           width: 7rem;
           font-size: 0.875rem;
+          margin-right: 5px;
           background-image: url(./assets/images/shape.png);
           background-size: 100% 100%;
         }
