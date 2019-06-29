@@ -318,7 +318,7 @@
               name:'转化率分析',
               type:'funnel',
               sort: 'ascending',
-              left: '5%',
+              left: '10%',
               top: '10%',
               bottom: '15%',
               gap: 5,
@@ -669,8 +669,11 @@
             data:['数量']
           },
           grid: {
+            top: '12%',
             left: '5%',
-            right: '5%'
+            right: '5%',
+            bottom: '15%',
+            containLabel: true
           },
           xAxis: {
             type: 'category',
@@ -895,6 +898,7 @@
         const option = {
           grid: {
             left: '15%',
+            top: '12%',
             bottom: '10%',
             containLabel: true
           },
